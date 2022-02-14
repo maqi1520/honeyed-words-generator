@@ -1,0 +1,60 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+h1 {
+  @apply text-3xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+a {
+  @apply text-blue-600 underline;
+}
+
+a {
+  @apply bg-gray-100;
+}
+.heart {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.heart-inner {
+  width: 100%;
+  height: 100%;
+  background-color: #e11d48;
+  transform: rotate(-45deg);
+  box-shadow: 0 0 6px rgba(213, 9, 60, 1);
+}
+.heart-inner:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e11d48;
+}
+.heart-inner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e11d48;
+}
